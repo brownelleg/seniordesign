@@ -11,8 +11,8 @@ if __name__ == "__main__":
 
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
     # Read the input image
-    img = cv2.imread('evanhansen.JPG')
-    img2 = cv2.imread('evanhansen.JPG')
+    img = cv2.imread('JoshuaTest6Feet.jpg')
+    img2 = cv2.imread('JoshuaTest6Feet.jpg')
     # Convert into grayscale
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # Detect faces
