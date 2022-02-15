@@ -1,0 +1,1 @@
+This folder exists to hold all test images for the project
