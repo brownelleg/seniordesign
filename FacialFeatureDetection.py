@@ -1,4 +1,5 @@
 import cv2
+import os
 import numpy as np
 
 mouth_cascade = cv2.CascadeClassifier('haarcascade_mcs_mouth.xml')
@@ -20,11 +21,13 @@ while True:
         cv2.rectangle(frame, (x,y), (x+w,y+h), (0,255,0), 3)
         break
 
+    #os.system("sudo /home/pi/libseek-thermal-master/build/examples/seek_viewer")
     cv2.imshow('Mouth Detector', frame)
 
     c = cv2.waitKey(1)
     if c == 27:
         break
+
 
 cap.release()
 cv2.destroyAllWindows()
