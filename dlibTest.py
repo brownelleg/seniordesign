@@ -42,7 +42,7 @@ class OpticPixels:
             cv2.circle(img=img, center=(x_right, y_right), radius=5, color=(0, 255, 0), thickness=-1)
 
         # show the image
-        cv2.imshow(winname="Face", mat=img)
+        #cv2.imshow(winname="Face", mat=img)
 
         # Wait for a key press to exit
         #cv2.waitKey(delay=0)
