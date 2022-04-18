@@ -2,6 +2,9 @@ from PIL import Image
 from numpy import mean
 import matplotlib.pyplot as plt
 from moving_average import exponential_moving_avereage, moving_average
+import glob
+import os.path
+import re           #get numbers from string
 
 class OpticToThermal:
     @staticmethod
@@ -82,7 +85,7 @@ class OpticToThermal:
     @staticmethod
     def showData(data):
         n = 8
-        a = 80
+        a = 75
 
         new_data_weight = moving_average(data, a)
         new_data = exponential_moving_avereage(data, n)
@@ -95,3 +98,12 @@ class OpticToThermal:
         plt.plot(new_data, label='Smoothed Pixel Values')
         plt.legend()
         plt.show()
+
+    @staticmethod
+    def MostRecentFrame():
+        folder_path = '/home/pi/Thermal_Images'  # r'path where your files are located'
+        file_type = '/*.png'  # r'\*type'
+        files = glob.glob(folder_path + file_type)
+        max_file = max(files, key=os.path.getctime)  # most recent file
+        Max_Frame_Number = re.findall("\d+", max_file)[0]
+        return(int(Max_Frame_Number))
