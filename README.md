@@ -3,7 +3,7 @@
 # README
 
 # This project is for a senior capstone class at John Brown University working alongside Montana State University.
-This project uses an optical (normal) camera and a thermal (heat sensing) camera in conjuction with a raspberry pi (microcontroller/computer). This readme doument will detail how to run this project beginning with hardward setup and intitial library installments. The IDE used was PyCharm. For other IDEs, parts of the process may be different.
+This project uses an optical (normal) camera and a thermal (heat sensing) camera in conjuction with a raspberry pi (microcontroller/computer). This readme doument will detail how to run this project beginning with hardward setup and intitial library installments. The IDE used was PyCharm. For other IDEs, parts of the process may be different. The 3D printed part is a mount for the thermal and optical cameras.
 
 # Credits
 * https://github.com/OpenThermal/libseek-thermal
