@@ -30,10 +30,12 @@ Download the following files from this repo:
 * ThermalOpticalTakePhoto.py
 * ThermalCameraTest.py
 * moving_average.py
+
 These should be all of the functions you need to gather data from both the thermal and optical cameras and display it in a graph format
 
 Optionally:
 * ThermalOpticalTakePhotoLivePlotting.py
+
 This code is not fully developed but ideally it can plot the data in live time on a graph that updates as the subject breaths
 
 # STEP 4: CHECK IMPORTS
