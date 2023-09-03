@@ -10,7 +10,7 @@ This project uses an optical (normal) camera and a thermal (heat sensing) camera
 * moving average code was taken from another github that I can't find
 
 # STEP 1: INSTALL OPENCV ON RASPBERRY PI
-After going through the normal installation process for the reaspberry pi os (https://www.raspberrypi.com/documentation/computers/getting-started.html), you will need to install opencv on the pi.
+After going through the normal installation process for the raspberry pi os (https://www.raspberrypi.com/documentation/computers/getting-started.html), you will need to install opencv on the pi.
 To do that, start with https://singleboardbytes.com/647/install-opencv-raspberry-pi-4.htm Method 1 (install with pip). 
 [pycharm download: https://raspberrytips.com/install-pycharm-raspberry-pi/] 
 After PyCharm is installed, make sure to download the interpreter, link to git repository by signing into pycharm.  
